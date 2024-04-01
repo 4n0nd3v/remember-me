@@ -7,9 +7,7 @@
     <div class="contents">
       <p>Title: {{ resource.title }}</p>
       <p>Description: {{ resource.description }}</p>
-      <p>
-        Link: <a :href="resource.link" target="_blank">{{ resource.link }}</a>
-      </p>
+      <a :href="resource.link" target="_blank">View Resource</a>
       <button @click="() => removeItem(resource.id)">Delete</button>
     </div>
   </div>
@@ -40,6 +38,14 @@ export default {
   width: 95%;
   height: 90%;
   margin: 5px auto;
+
+  p {
+    width: fit-content;
+  }
+
+  a {
+    width: fit-content;
+  }
 
   button {
     position: absolute;

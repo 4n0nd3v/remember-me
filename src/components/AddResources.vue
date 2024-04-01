@@ -14,13 +14,14 @@
     <ErrorModal v-if="showError" class="error">
       <p>An error ocurred!</p>
       <p>Input fields must not be empty</p>
-      <button @click="hideError()">Ok</button>
+      <Button @click="hideError()">Ok</Button>
     </ErrorModal>
   </teleport>
 </template>
 
 <script>
 import ErrorModal from './ErrorModal.vue';
+import Button from './UI/Button';
 
 export default {
   data() {
@@ -34,6 +35,7 @@ export default {
   props: ['addItem'],
   components: {
     ErrorModal,
+    Button,
   },
   emits: ['addItem'],
   methods: {

@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import TheHeader from './components/TheHeader.vue';
+import TheHeader from './components/Layouts/TheHeader.vue';
 import StoredResources from './components/StoredResources.vue';
 import AddResource from './components/AddResources.vue';
 import ComponentSelector from './components/ComponentSelector.vue';
@@ -77,3 +77,4 @@ main {
   align-items: center;
 }
 </style>
+./components/Layouts/TheHeader.vue

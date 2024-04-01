@@ -24,6 +24,6 @@ dialog {
   border: 1px solid lightgray;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 </style>
